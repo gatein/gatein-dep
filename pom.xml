@@ -8,19 +8,19 @@
   
   <groupId>org.gatein</groupId>
   <artifactId>gatein-dep</artifactId>
-  <version>1.0.0-GA</version>
+  <version>1.0.1-GA</version>
   <packaging>pom</packaging>
 
   <parent>
   	<artifactId>jboss-parent</artifactId>
   	<groupId>org.jboss</groupId>
-  	<version>5-beta-5</version>
+  	<version>5</version>
   </parent>
   
   <scm>
-   	<connection>scm:svn:http://anonsvn.jboss.org/repos/gatein/maven/dep/tags/1.0.0-GA</connection>
-   	<developerConnection>scm:svn:https://svn.jboss.org/repos/gatein/maven/dep/tags/1.0.0-GA</developerConnection>
-   	<url>http://fisheye.jboss.org/browse/gatein/maven/dep/tags/1.0.0-GA</url>
+   	<connection>scm:svn:http://anonsvn.jboss.org/repos/gatein/maven/dep/tags/1.0.1-GA</connection>
+   	<developerConnection>scm:svn:https://svn.jboss.org/repos/gatein/maven/dep/tags/1.0.1-GA</developerConnection>
+   	<url>http://fisheye.jboss.org/browse/gatein/maven/dep/tags/1.0.1-GA</url>
   </scm>
   
   <properties>
