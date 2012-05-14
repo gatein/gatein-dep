@@ -8,7 +8,7 @@
   
   <groupId>org.gatein</groupId>
   <artifactId>gatein-dep</artifactId>
-  <version>1.0.1-GA</version>
+  <version>1.0.2-GA</version>
   <packaging>pom</packaging>
 
   <parent>
@@ -18,9 +18,9 @@
   </parent>
   
   <scm>
-   	<connection>scm:svn:http://anonsvn.jboss.org/repos/gatein/maven/dep/tags/1.0.1-GA</connection>
-   	<developerConnection>scm:svn:https://svn.jboss.org/repos/gatein/maven/dep/tags/1.0.1-GA</developerConnection>
-   	<url>http://fisheye.jboss.org/browse/gatein/maven/dep/tags/1.0.1-GA</url>
+   	<connection>scm:svn:http://anonsvn.jboss.org/repos/gatein/maven/dep/tags/1.0.2-GA</connection>
+   	<developerConnection>scm:svn:https://svn.jboss.org/repos/gatein/maven/dep/tags/1.0.2-GA</developerConnection>
+   	<url>http://fisheye.jboss.org/browse/gatein/maven/dep/tags/1.0.2-GA</url>
   </scm>
   
   <properties>
@@ -351,25 +351,18 @@
   
   <repositories>
     <repository>
-      <id>repository.jboss.org</id>
-      <name>JBoss Repository</name>
+      <id>jboss-public-repository-group</id>
+      <name>JBoss Public Maven Repository Group</name>
+      <url>https://repository.jboss.org/nexus/content/groups/public/</url>
       <layout>default</layout>
-      <url>http://repository.jboss.org/maven2/</url>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
-    </repository>
-    <repository>
-      <id>snapshots.jboss.org</id>
-      <name>JBoss Snapshots Repository</name>
-      <layout>default</layout>
-      <url>http://snapshots.jboss.org/maven2/</url>
+      <releases>
+        <enabled>true</enabled>
+        <updatePolicy>never</updatePolicy>
+      </releases>
       <snapshots>
         <enabled>true</enabled>
+        <updatePolicy>never</updatePolicy>
       </snapshots>
-      <releases>
-        <enabled>false</enabled>
-      </releases>
     </repository>
   </repositories>
   
