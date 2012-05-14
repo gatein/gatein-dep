@@ -1,0 +1,390 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+		 
+  <modelVersion>4.0.0</modelVersion>
+  
+  <name>GateIn dependencies</name>
+  <description>GateIn dependencies configuration</description>
+  <url>www.jboss.org/gatein</url>
+  
+  <groupId>org.gatein</groupId>
+  <artifactId>gatein-dep</artifactId>
+  <version>1.0.0-Beta01</version>
+  <packaging>pom</packaging>
+
+  <parent>
+  	<artifactId>jboss-parent</artifactId>
+  	<groupId>org.jboss</groupId>
+  	<version>5-beta-3</version>
+  </parent>
+  
+  <scm>
+   	<connection>scm:svn:http://anonsvn.jboss.org/repos/gatein/tools/maven/dep/tags/1.0.0-Beta01</connection>
+   	<developerConnection>scm:svn:https://svn.jboss.org/repos/gatein/tools/maven/dep/tags/1.0.0-Beta01</developerConnection>
+   	<url>http://fisheye.jboss.org/browse/gatein/tools/maven/dep/tags/1.0.0-Beta01</url>
+  </scm>
+  
+  <properties>
+    <!-- Dependencies versions -->
+    <version.activation>1.1</version.activation>
+    <version.chromattic>1.0.0-beta4</version.chromattic>
+    <version.log4j>1.2.14</version.log4j>
+    <version.junit>3.8.2</version.junit>
+    <version.javax.servlet>2.5</version.javax.servlet>
+    <version.javax.servlet.jsp>2.1</version.javax.servlet.jsp>
+    <version.portlet-api>2.0</version.portlet-api>
+    <version.cargo>1.0.1-alpha-1</version.cargo>
+    <version.ant>1.7.0</version.ant>
+    <version.concurrent>1.3.4</version.concurrent>
+    <version.sun-jaxb>2.1.4</version.sun-jaxb>
+    <version.ccpp-api>1.0</version.ccpp-api>
+    <version.slf4j>1.5.8</version.slf4j>
+    
+<!-- next two needs to be synchronized within modules - pc vs wcl -->
+    <version.apache.tomcat>6.0.16</version.apache.tomcat>
+    <version.apache.commons-logging>1.1.1</version.apache.commons-logging> 
+    <version.apache.commons-httpclient>3.0.1</version.apache.commons-httpclient>
+    <version.apache.portals.bridges>1.0.4</version.apache.portals.bridges>
+    <version.apache.taglibs>1.1.2</version.apache.taglibs>
+    <version.xerces>2.9.1</version.xerces>
+    
+    <version.jboss.logging>2.0.4.GA</version.jboss.logging>
+    <version.jboss.remoting>2.5.0.GA</version.jboss.remoting>
+    <version.jboss.unit>1.2.3</version.jboss.unit>
+    <version.jboss.serialization>1.0.3.GA</version.jboss.serialization>
+    <version.jboss.reflect>2.0.2.GA</version.jboss.reflect>
+    <version.jboss.microcontainer>2.0.6.GA</version.jboss.microcontainer>
+    <version.jboss.j2ee>4.2.3.GA</version.jboss.j2ee>
+    <version.jboss.jmx>4.2.3.GA</version.jboss.jmx>
+    <version.jboss.man>2.0.0.GA</version.jboss.man>
+    <version.jboss.vfs>2.1.0.GA</version.jboss.vfs>
+    <version.jbossxb>2.0.1.GA</version.jbossxb>
+  </properties>
+  
+  
+  <!-- ********************* -->
+  <!-- Dependency Management -->
+  <!-- ********************* -->
+  
+  <dependencyManagement>
+    <dependencies>
+      <!-- External dependencies -->
+      <dependency>
+        <groupId>javax.activation</groupId>
+        <artifactId>activation</artifactId>
+        <version>${version.activation}</version>
+      </dependency>
+      
+      <dependency>
+        <groupId>concurrent</groupId>
+        <artifactId>concurrent</artifactId>
+        <version>${version.concurrent}</version>
+      </dependency>
+      
+      <dependency>
+        <groupId>javax.jcr</groupId>
+        <artifactId>jcr</artifactId>
+        <version>1.0</version>
+      </dependency>
+      
+      <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>${version.junit}</version>
+      </dependency>
+      
+      <dependency>
+        <groupId>org.chromattic</groupId>
+        <artifactId>chromattic.api</artifactId>
+        <version>${version.chromattic}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.chromattic</groupId>
+        <artifactId>chromattic.core</artifactId>
+        <version>${version.chromattic}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.chromattic</groupId>
+        <artifactId>chromattic.apt</artifactId>
+        <version>${version.chromattic}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.chromattic</groupId>
+        <artifactId>chromattic.exo</artifactId>
+        <version>${version.chromattic}</version>
+      </dependency>
+      
+      <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-log4j12</artifactId>
+        <version>${version.slf4j}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-jdk14</artifactId>
+        <version>${version.slf4j}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-api</artifactId>
+        <version>${version.slf4j}</version>
+      </dependency>
+      
+      <dependency>
+        <groupId>apache-log4j</groupId>
+        <artifactId>log4j</artifactId>
+        <version>${version.log4j}</version>
+      </dependency>
+      
+      <dependency>
+        <groupId>javax.servlet</groupId>
+        <artifactId>servlet-api</artifactId>
+        <version>${version.javax.servlet}</version>
+      </dependency>
+      <dependency>
+        <groupId>javax.servlet.jsp</groupId>
+        <artifactId>jsp-api</artifactId>
+        <version>${version.javax.servlet.jsp}</version>
+      </dependency>
+      <dependency>
+        <groupId>javax.portlet</groupId>
+        <artifactId>portlet-api</artifactId>
+        <version>${version.portlet-api}</version>
+      </dependency>
+      
+      
+      
+      <dependency>
+        <groupId>org.codehaus.cargo</groupId>
+        <artifactId>cargo-core-uberjar</artifactId>
+        <version>${version.cargo}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.codehaus.cargo</groupId>
+        <artifactId>cargo-jetty-deployer</artifactId>
+        <type>war</type>
+        <version>${version.cargo}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.codehaus.cargo</groupId>
+        <artifactId>cargo-ant</artifactId>
+        <version>${version.cargo}</version>
+      </dependency>
+      
+      <dependency>
+        <groupId>org.apache.ant</groupId>
+        <artifactId>ant</artifactId>
+        <version>${version.ant}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.ant</groupId>
+        <artifactId>ant-junit</artifactId>
+        <version>${version.ant}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.ant</groupId>
+        <artifactId>ant-nodeps</artifactId>
+        <version>${version.ant}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.ant</groupId>
+        <artifactId>ant-launcher</artifactId>
+        <version>${version.ant}</version>
+      </dependency>
+      
+      <dependency>
+        <groupId>org.apache.tomcat</groupId>
+        <artifactId>catalina</artifactId>
+        <version>${version.apache.tomcat}</version>
+      </dependency>
+      <dependency>
+        <groupId>apache-taglibs</groupId>
+        <artifactId>jstl</artifactId>
+        <version>${version.apache.taglibs}</version>
+      </dependency>
+      <dependency>
+        <groupId>apache-taglibs</groupId>
+        <artifactId>standard</artifactId>
+        <version>${version.apache.taglibs}</version>
+      </dependency>
+      <dependency>
+        <groupId>commons-logging</groupId>
+        <artifactId>commons-logging</artifactId>
+        <version>${version.apache.commons-logging}</version>
+      </dependency>
+      <dependency>
+        <groupId>commons-httpclient</groupId>
+        <artifactId>commons-httpclient</artifactId>
+        <version>${version.apache.commons-httpclient}</version>
+       </dependency>
+       
+       <dependency>
+        <groupId>apache-xerces</groupId>
+        <artifactId>resolver</artifactId>
+        <version>${version.xerces}</version>
+       </dependency>
+      <dependency>
+        <groupId>apache-xerces</groupId>
+        <artifactId>xercesImpl</artifactId>
+        <version>${version.xerces}</version>
+      </dependency>
+      <dependency>
+        <groupId>apache-xerces</groupId>
+        <artifactId>xml-apis</artifactId>
+        <version>${version.xerces}</version>
+      </dependency>
+       
+       
+       <dependency>
+         <groupId>org.jboss.unit</groupId>
+         <artifactId>jboss-unit</artifactId>
+         <version>${version.jboss.unit}</version>
+       </dependency>
+       <dependency>
+         <groupId>org.jboss.unit</groupId>
+         <artifactId>jboss-unit-remote</artifactId>
+         <version>${version.jboss.unit}</version>
+       </dependency>
+       <dependency>
+         <groupId>org.jboss.unit</groupId>
+         <artifactId>jboss-unit-mc</artifactId>
+         <version>${version.jboss.unit}</version>
+       </dependency>
+       <dependency>
+         <groupId>org.jboss.unit</groupId>
+         <artifactId>jboss-unit-tooling-ant</artifactId>
+         <version>${version.jboss.unit}</version>
+       </dependency>
+       <dependency>
+         <groupId>org.jboss.unit</groupId>
+         <artifactId>portal-test</artifactId>
+         <version>${version.jboss.unit}</version>
+       </dependency>
+       <dependency>
+         <groupId>org.jboss.unit</groupId>
+         <artifactId>portal-test-generic</artifactId>
+         <version>${version.jboss.unit}</version>
+       </dependency>
+       <dependency>
+        <groupId>jboss</groupId>
+        <artifactId>jboss-j2ee</artifactId>
+        <version>${version.jboss.j2ee}</version>
+      </dependency>
+      <dependency>
+        <groupId>jboss</groupId>
+        <artifactId>jboss-jmx</artifactId>
+        <version>${version.jboss.jmx}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jboss</groupId>
+        <artifactId>jboss-vfs</artifactId>
+        <version>${version.jboss.vfs}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jboss.man</groupId>
+        <artifactId>jboss-managed</artifactId>
+        <version>${version.jboss.man}</version>
+      </dependency>
+       
+       <dependency>
+         <groupId>jboss</groupId>
+         <artifactId>jboss-common-logging-jdk</artifactId>
+         <version>${version.jboss.logging}</version>
+       </dependency>
+       <dependency>
+         <groupId>jboss</groupId>
+         <artifactId>jboss-common-logging-log4j</artifactId>
+         <version>${version.jboss.logging}</version>
+       </dependency>
+       
+       <dependency>
+         <groupId>org.jboss.remoting</groupId>
+         <artifactId>jboss-remoting</artifactId>
+         <version>${version.jboss.remoting}</version>
+       </dependency>
+       
+       <dependency>
+         <groupId>jboss</groupId>
+         <artifactId>jboss-serialization</artifactId>
+         <version>${version.jboss.serialization}</version>
+       </dependency>
+       
+       <dependency>
+         <groupId>org.jboss</groupId>
+         <artifactId>jboss-reflect</artifactId>
+         <version>${version.jboss.reflect}</version>
+       </dependency>
+       
+       <dependency>
+         <groupId>org.jboss.microcontainer</groupId>
+         <artifactId>jboss-dependency</artifactId>
+         <version>${version.jboss.microcontainer}</version>
+       </dependency>
+       <dependency>
+         <groupId>org.jboss.microcontainer</groupId>
+         <artifactId>jboss-kernel</artifactId>
+         <version>${version.jboss.microcontainer}</version>
+       </dependency>
+       <dependency>
+         <groupId>org.jboss</groupId>
+         <artifactId>jbossxb</artifactId>
+         <version>${version.jbossxb}</version>
+      </dependency>
+       
+       <dependency>
+         <groupId>org.apache.portals.bridges</groupId>
+         <artifactId>portals-bridges-common</artifactId>
+         <version>${version.apache.portals.bridges}</version>
+       </dependency>
+       
+       <dependency>
+         <groupId>sun-jaxb</groupId>
+         <artifactId>jaxb-api</artifactId>
+         <version>${version.sun-jaxb}</version>
+       </dependency>
+       
+       <dependency>
+         <groupId>javax.ccpp</groupId>
+         <artifactId>ccpp</artifactId>
+         <version>${version.ccpp-api}</version>
+      </dependency>
+      
+      <dependency>
+        <groupId>cargo</groupId>
+        <artifactId>cargo-manager</artifactId>
+        <type>war</type>
+        <version>0.9-portal</version>
+      </dependency>
+       
+    </dependencies>
+  </dependencyManagement>
+  
+  
+  <!-- **************** -->
+  <!-- Repositiories    -->
+  <!-- **************** -->
+  
+  <repositories>
+    <repository>
+      <id>repository.jboss.org</id>
+      <name>JBoss Repository</name>
+      <layout>default</layout>
+      <url>http://repository.jboss.org/maven2/</url>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
+    <repository>
+      <id>snapshots.jboss.org</id>
+      <name>JBoss Snapshots Repository</name>
+      <layout>default</layout>
+      <url>http://snapshots.jboss.org/maven2/</url>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+    </repository>
+  </repositories>
+  
+</project>
