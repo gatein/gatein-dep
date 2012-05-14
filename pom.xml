@@ -8,7 +8,7 @@
   
   <groupId>org.gatein</groupId>
   <artifactId>gatein-dep</artifactId>
-  <version>1.1.0-Beta05</version>
+  <version>1.1.0-Beta06</version>
   <packaging>pom</packaging>
 
   <parent>
@@ -18,9 +18,9 @@
   </parent>
   
   <scm>
-    <connection>scm:svn:http://anonsvn.jboss.org/repos/gatein/maven/dep/tags/1.1.0-Beta05</connection>
-    <developerConnection>scm:svn:https://svn.jboss.org/repos/gatein/maven/dep/tags/1.1.0-Beta05</developerConnection>
-    <url>http://fisheye.jboss.org/browse/gatein/maven/dep/tags/1.1.0-Beta05</url>
+    <connection>scm:svn:http://anonsvn.jboss.org/repos/gatein/maven/dep/tags/1.1.0-Beta06</connection>
+    <developerConnection>scm:svn:https://svn.jboss.org/repos/gatein/maven/dep/tags/1.1.0-Beta06</developerConnection>
+    <url>http://fisheye.jboss.org/browse/gatein/maven/dep/tags/1.1.0-Beta06</url>
   </scm>
   
   <properties>
@@ -64,6 +64,7 @@
     <version.oauth.core_oauth-provider>20100527</version.oauth.core_oauth-provider>
     <version.oauth.core_oauth-httpclient4>20090913</version.oauth.core_oauth-httpclient4>
     <version.caja.caja>r4251</version.caja.caja>
+    <version.caja.json>r1</version.caja.json>
     <version.caja.htmlparser>r4209</version.caja.htmlparser>
     <version.jibx>1.2.2</version.jibx>
     <version.antlr>2.7.6rc1</version.antlr>
@@ -331,6 +332,11 @@
       <dependency>
         <groupId>org.apache.httpcomponents</groupId>
         <artifactId>httpclient</artifactId>
+        <version>${version.apache.commons-httpclient}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.httpcomponents</groupId>
+        <artifactId>httpcore</artifactId>
         <version>${version.apache.commons-httpclient}</version>
       </dependency>
       <dependency>
@@ -665,6 +671,11 @@
            </exclusion>
         </exclusions>
       </dependency>
+      <dependency>
+        <groupId>caja</groupId>
+        <artifactId>json_simple</artifactId>
+        <version>${version.caja.json}</version>
+      </dependency>      
       <dependency>
         <groupId>caja</groupId>
         <artifactId>htmlparser</artifactId>
