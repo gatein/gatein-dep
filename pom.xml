@@ -8,19 +8,19 @@
   
   <groupId>org.gatein</groupId>
   <artifactId>gatein-dep</artifactId>
-  <version>1.1.0-Beta06</version>
+  <version>1.1.0-GA</version>
   <packaging>pom</packaging>
 
   <parent>
     <groupId>org.gatein</groupId>
     <artifactId>gatein-parent</artifactId>
-    <version>1.1.0-Beta02</version>
+    <version>1.1.0-GA</version>
   </parent>
   
   <scm>
-    <connection>scm:svn:http://anonsvn.jboss.org/repos/gatein/maven/dep/tags/1.1.0-Beta06</connection>
-    <developerConnection>scm:svn:https://svn.jboss.org/repos/gatein/maven/dep/tags/1.1.0-Beta06</developerConnection>
-    <url>http://fisheye.jboss.org/browse/gatein/maven/dep/tags/1.1.0-Beta06</url>
+    <connection>scm:svn:http://anonsvn.jboss.org/repos/gatein/maven/dep/tags/1.1.0-GA</connection>
+    <developerConnection>scm:svn:https://svn.jboss.org/repos/gatein/maven/dep/tags/1.1.0-GA</developerConnection>
+    <url>http://fisheye.jboss.org/browse/gatein/maven/dep/tags/1.1.0-GA</url>
   </scm>
   
   <properties>
@@ -553,13 +553,13 @@
         <version>${version.jboss.logging}</version>
       </dependency>
       <dependency>
-        <groupId>jboss</groupId>
-        <artifactId>jboss-common-logging-jdk</artifactId>
+        <groupId>org.jboss.logging</groupId>
+        <artifactId>jboss-logging-jdk</artifactId>
         <version>${version.jboss.logging}</version>
       </dependency>
       <dependency>
-        <groupId>jboss</groupId>
-        <artifactId>jboss-common-logging-log4j</artifactId>
+        <groupId>org.jboss.logging</groupId>
+        <artifactId>jboss-logging-log4j</artifactId>
         <version>${version.jboss.logging}</version>
       </dependency>
       <dependency>
