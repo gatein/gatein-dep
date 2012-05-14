@@ -8,19 +8,19 @@
   
   <groupId>org.gatein</groupId>
   <artifactId>gatein-dep</artifactId>
-  <version>1.0.2-GA</version>
+  <version>1.0.3-Beta01</version>
   <packaging>pom</packaging>
 
   <parent>
-  	<artifactId>jboss-parent</artifactId>
-  	<groupId>org.jboss</groupId>
-  	<version>5</version>
+    <artifactId>jboss-parent</artifactId>
+    <groupId>org.jboss</groupId>
+    <version>5</version>
   </parent>
   
   <scm>
-   	<connection>scm:svn:http://anonsvn.jboss.org/repos/gatein/maven/dep/tags/1.0.2-GA</connection>
-   	<developerConnection>scm:svn:https://svn.jboss.org/repos/gatein/maven/dep/tags/1.0.2-GA</developerConnection>
-   	<url>http://fisheye.jboss.org/browse/gatein/maven/dep/tags/1.0.2-GA</url>
+    <connection>scm:svn:http://anonsvn.jboss.org/repos/gatein/maven/dep/tags/1.0.3-Beta01</connection>
+    <developerConnection>scm:svn:https://svn.jboss.org/repos/gatein/maven/dep/tags/1.0.3-Beta01</developerConnection>
+    <url>http://fisheye.jboss.org/browse/gatein/maven/dep/tags/1.0.3-Beta01</url>
   </scm>
   
   <properties>
@@ -49,7 +49,7 @@
     <version.jboss.unit>1.2.3</version.jboss.unit>
     <version.jboss.serialization>1.0.3.GA</version.jboss.serialization>
     <version.jboss.reflect>2.0.2.GA</version.jboss.reflect>
-    <version.jboss.microcontainer>2.0.6.GA</version.jboss.microcontainer>
+    <version.jboss.microcontainer>2.0.9.GA</version.jboss.microcontainer>
     <version.jboss.j2ee>4.2.3.GA</version.jboss.j2ee>
     <version.jboss.jmx>4.2.3.GA</version.jboss.jmx>
     <version.jboss.man>2.0.0.GA</version.jboss.man>
@@ -132,7 +132,7 @@
       </dependency>
       
       <dependency>
-        <groupId>apache-log4j</groupId>
+        <groupId>log4j</groupId>
         <artifactId>log4j</artifactId>
         <version>${version.log4j}</version>
       </dependency>
@@ -345,25 +345,17 @@
   </dependencyManagement>
   
   
-  <!-- **************** -->
-  <!-- Repositiories    -->
-  <!-- **************** -->
-  
-  <repositories>
-    <repository>
-      <id>jboss-public-repository-group</id>
-      <name>JBoss Public Maven Repository Group</name>
-      <url>https://repository.jboss.org/nexus/content/groups/public/</url>
-      <layout>default</layout>
-      <releases>
-        <enabled>true</enabled>
-        <updatePolicy>never</updatePolicy>
-      </releases>
-      <snapshots>
-        <enabled>true</enabled>
-        <updatePolicy>never</updatePolicy>
-      </snapshots>
-    </repository>
-  </repositories>
-  
+  <build>
+     <pluginManagement>
+        <plugins>
+           <plugin>
+              <groupId>org.jboss.unit</groupId>
+              <artifactId>jboss-unit-tooling-ant</artifactId>
+              <version>${version.jboss.unit}</version>
+           </plugin>
+        </plugins>
+     </pluginManagement>
+  </build>
+
+ 
 </project>
