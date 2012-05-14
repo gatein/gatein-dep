@@ -8,7 +8,7 @@
   
   <groupId>org.gatein</groupId>
   <artifactId>gatein-dep</artifactId>
-  <version>1.1.0-Beta04</version>
+  <version>1.1.0-Beta05</version>
   <packaging>pom</packaging>
 
   <parent>
@@ -18,9 +18,9 @@
   </parent>
   
   <scm>
-    <connection>scm:svn:http://anonsvn.jboss.org/repos/gatein/maven/dep/tags/1.1.0-Beta04</connection>
-    <developerConnection>scm:svn:https://svn.jboss.org/repos/gatein/maven/dep/tags/1.1.0-Beta04</developerConnection>
-    <url>http://fisheye.jboss.org/browse/gatein/maven/dep/tags/1.1.0-Beta04</url>
+    <connection>scm:svn:http://anonsvn.jboss.org/repos/gatein/maven/dep/tags/1.1.0-Beta05</connection>
+    <developerConnection>scm:svn:https://svn.jboss.org/repos/gatein/maven/dep/tags/1.1.0-Beta05</developerConnection>
+    <url>http://fisheye.jboss.org/browse/gatein/maven/dep/tags/1.1.0-Beta05</url>
   </scm>
   
   <properties>
@@ -28,6 +28,7 @@
     <version.javax.activation>1.1.1</version.javax.activation>
     <version.javax.servlet>2.5</version.javax.servlet>
     <version.javax.servlet.jsp>2.1</version.javax.servlet.jsp>
+    <version.javax.servlet.jstl>1.2</version.javax.servlet.jstl>
     <version.javax.portlet>2.0</version.javax.portlet>
     <version.javax.ccpp>1.0</version.javax.ccpp>
     <version.javax.jcr>1.0</version.javax.jcr>
@@ -41,25 +42,29 @@
     <version.org.slf4j>1.5.8</version.org.slf4j>
     <version.log4j>1.2.16</version.log4j>
 
+    <version.xml-apis>1.3.04</version.xml-apis>
     <version.junit>3.8.2</version.junit>
     <version.hsqldb>2.0.0</version.hsqldb>
-    <version.rhino>1.6R7</version.rhino>
+    <version.rhino>1.7R2</version.rhino>
     <version.groovy>1.7.6</version.groovy>
     <version.concurrent>1.3.4</version.concurrent>
     <version.sun.jaxb>2.1.4</version.sun.jaxb>
     <version.orgjson>20070829</version.orgjson>
     <version.nuhtmlparser>1.0.7</version.nuhtmlparser>
     <version.jaxen>1.1.1</version.jaxen>
-    <version.nekohtml>1.9.12</version.nekohtml>
+    <version.nekohtml>1.9.14</version.nekohtml>
     <version.icu4j>3.8</version.icu4j>
-    <version.rome>0.9</version.rome>
+    <version.rome.rome>1.0</version.rome.rome>
+    <version.rome.modules>0.3.2</version.rome.modules>
     <version.google.inject>2.0</version.google.inject>
     <version.google.collections>1.0-rc2</version.google.collections>
     <version.google.guava>r09</version.google.guava>
     <version.google.javascript>r706</version.google.javascript>
-    <version.oauth>20080621</version.oauth>
-    <version.caja.json>r1</version.caja.json>
-    <version.caja.caja>r3375</version.caja.caja>
+    <version.oauth.core_auth>20100527</version.oauth.core_auth>
+    <version.oauth.core_oauth-provider>20100527</version.oauth.core_oauth-provider>
+    <version.oauth.core_oauth-httpclient4>20090913</version.oauth.core_oauth-httpclient4>
+    <version.caja.caja>r4251</version.caja.caja>
+    <version.caja.htmlparser>r4209</version.caja.htmlparser>
     <version.jibx>1.2.2</version.jibx>
     <version.antlr>2.7.6rc1</version.antlr>
     <version.aopalliance>1.0</version.aopalliance>
@@ -67,7 +72,7 @@
     <version.bouncycastle>136</version.bouncycastle>
     <version.cglib>2.2</version.cglib>
     <version.dom4j>1.6.1</version.dom4j>
-    <version.ehcache>1.6.0</version.ehcache>
+    <version.ehcache>2.2.0</version.ehcache>
     <version.jhlabs>2.0.235</version.jhlabs>
     <version.htmlparser>1.6</version.htmlparser>
     <version.jdom>1.0</version.jdom>
@@ -82,7 +87,7 @@
 
     <version.cargo>1.0.1-alpha-1</version.cargo>
 
-    <version.apache.tomcat>6.0.16</version.apache.tomcat>
+    <version.apache.tomcat>6.0.29</version.apache.tomcat>
     <version.apache.xerces>2.9.1</version.apache.xerces>
     <version.apache.ant>1.7.0</version.apache.ant>
     <version.apache.lucene>2.9.4</version.apache.lucene>
@@ -92,19 +97,22 @@
     <version.apache.ws>1.0.1</version.apache.ws>
     <version.apache.xmlbeans>2.3.0</version.apache.xmlbeans>
     <version.apache.tika>0.7</version.apache.tika>
+    <version.apache.shiro>1.0.0-incubating</version.apache.shiro>
+    <version.apache.geronimo.specs>1.0.1</version.apache.geronimo.specs>
 
     <version.apache.commons-logging>1.1.1</version.apache.commons-logging>
-    <version.apache.commons-httpclient>3.1</version.apache.commons-httpclient>
+    <version.apache.commons-httpclient>4.0.1</version.apache.commons-httpclient>
     <version.apache.commons-beanutils>1.8.3</version.apache.commons-beanutils>
     <version.apache.commons-chain>1.2</version.apache.commons-chain>
-    <version.apache.commons-codec>1.3</version.apache.commons-codec>
+    <version.apache.commons-codec>1.4</version.apache.commons-codec>
     <version.apache.commons-fileupload>1.2.1</version.apache.commons-fileupload>
     <version.apache.commons-pool>1.5.5</version.apache.commons-pool>
     <version.apache.commons-dbcp>1.4</version.apache.commons-dbcp>
-    <version.apache.commons-io>1.3.2</version.apache.commons-io>
+    <version.apache.commons-io>1.4</version.apache.commons-io>
     <version.apache.commons-collections>3.2.1</version.apache.commons-collections>
     <version.apache.commons-lang>2.6</version.apache.commons-lang>
     <version.apache.commons-digester>1.7</version.apache.commons-digester>
+    <version.apache.commons-betwixt>0.8</version.apache.commons-betwixt>
 
     <version.hibernate.ejb3>1.0.2.GA</version.hibernate.ejb3>
     <version.hibernate.commonsannotations>3.1.0.GA</version.hibernate.commonsannotations>
@@ -163,6 +171,11 @@
         <groupId>javax.servlet.jsp</groupId>
         <artifactId>jsp-api</artifactId>
         <version>${version.javax.servlet.jsp}</version>
+      </dependency>
+      <dependency>
+        <groupId>javax.servlet</groupId>
+        <artifactId>jstl</artifactId>
+        <version>${version.javax.servlet.jstl}</version>
       </dependency>
       <dependency>
         <groupId>javax.portlet</groupId>
@@ -316,9 +329,14 @@
          <version>${version.apache.commons-digester}</version>
       </dependency>
       <dependency>
-        <groupId>commons-httpclient</groupId>
-        <artifactId>commons-httpclient</artifactId>
+        <groupId>org.apache.httpcomponents</groupId>
+        <artifactId>httpclient</artifactId>
         <version>${version.apache.commons-httpclient}</version>
+      </dependency>
+      <dependency>
+        <artifactId>commons-betwixt</artifactId>
+        <groupId>commons-betwixt</groupId>
+        <version>${version.apache.commons-betwixt}</version>
       </dependency>
 
       <dependency>
@@ -389,17 +407,35 @@
         <artifactId>catalina</artifactId>
         <version>${version.apache.tomcat}</version>
       </dependency>
+      <dependency>
+        <groupId>org.apache.tomcat</groupId>
+        <artifactId>el-api</artifactId>
+        <version>${version.apache.tomcat}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.tomcat</groupId>
+        <artifactId>jasper-el</artifactId>
+        <version>${version.apache.tomcat}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.geronimo.specs</groupId>
+        <artifactId>geronimo-stax-api_1.0_spec</artifactId>
+        <version>${version.apache.geronimo.specs}</version>
+      </dependency>
 
       <dependency>
         <groupId>org.apache.sanselan</groupId>
         <artifactId>sanselan</artifactId>
         <version>${version.apache.sanselan}</version>
       </dependency>
+
       <dependency>
         <groupId>org.apache.ws.commons</groupId>
         <artifactId>ws-commons-util</artifactId>
         <version>${version.apache.ws}</version>
       </dependency>
+
       <dependency>
         <groupId>org.apache.xmlbeans</groupId>
         <artifactId>xmlbeans</artifactId>
@@ -414,6 +450,12 @@
         <groupId>org.apache.tika</groupId>
         <artifactId>tika-parsers</artifactId>
         <version>${version.apache.tika}</version>
+      </dependency>
+
+      <dependency>
+        <groupId>org.apache.shiro</groupId>
+        <artifactId>shiro-web</artifactId>
+        <version>${version.apache.shiro}</version>
       </dependency>
 
       <!--
@@ -587,39 +629,68 @@
       -->
 
       <dependency>
-         <groupId>org.json</groupId>
-         <artifactId>json</artifactId>
-         <version>${version.orgjson}</version>
+        <groupId>xml-apis</groupId>
+        <artifactId>xml-apis</artifactId>
+        <version>${version.xml-apis}</version>
       </dependency>
       <dependency>
-         <groupId>org.hsqldb</groupId>
-         <artifactId>hsqldb</artifactId>
-         <version>${version.hsqldb}</version>
+        <groupId>org.json</groupId>
+        <artifactId>json</artifactId>
+        <version>${version.orgjson}</version>
       </dependency>
       <dependency>
-         <groupId>rhino</groupId>
-         <artifactId>js</artifactId>
-         <version>${version.rhino}</version>
+        <groupId>org.hsqldb</groupId>
+        <artifactId>hsqldb</artifactId>
+        <version>${version.hsqldb}</version>
       </dependency>
       <dependency>
-         <groupId>org.codehaus.groovy</groupId>
-         <artifactId>groovy-all</artifactId>
-         <version>${version.groovy}</version>
+        <groupId>rhino</groupId>
+        <artifactId>js</artifactId>
+        <version>${version.rhino}</version>
       </dependency>
       <dependency>
-         <groupId>caja</groupId>
-         <artifactId>caja</artifactId>
-         <version>${version.caja.caja}</version>
+        <groupId>org.codehaus.groovy</groupId>
+        <artifactId>groovy-all</artifactId>
+        <version>${version.groovy}</version>
       </dependency>
       <dependency>
-         <groupId>caja</groupId>
-         <artifactId>json_simple</artifactId>
-         <version>${version.caja.json}</version>
+        <groupId>caja</groupId>
+        <artifactId>caja</artifactId>
+        <version>${version.caja.caja}</version>
+        <exclusions>
+           <!-- force use of xml-apis until caja fixes their pom -->
+           <exclusion>
+              <groupId>xerces</groupId>
+              <artifactId>xmlParserAPIs</artifactId>
+           </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
-         <groupId>net.oauth</groupId>
-         <artifactId>core</artifactId>
-         <version>${version.oauth}</version>
+        <groupId>caja</groupId>
+        <artifactId>htmlparser</artifactId>
+        <version>${version.caja.htmlparser}</version>
+        <exclusions>
+          <!-- force use of xml-apis until caja fixes their pom -->
+          <exclusion>
+            <groupId>xerces</groupId>
+            <artifactId>xmlParserAPIs</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>
+      <dependency>
+        <groupId>net.oauth.core</groupId>
+        <artifactId>oauth</artifactId>
+        <version>${version.oauth.core_auth}</version>
+      </dependency>
+      <dependency>
+        <groupId>net.oauth.core</groupId>
+        <artifactId>oauth-provider</artifactId>
+        <version>${version.oauth.core_oauth-provider}</version>
+      </dependency>
+      <dependency>
+        <groupId>net.oauth.core</groupId>
+        <artifactId>oauth-httpclient4</artifactId>
+        <version>${version.oauth.core_oauth-httpclient4}</version>
       </dependency>
       <dependency>
          <groupId>com.google.collections</groupId>
@@ -637,6 +708,11 @@
          <version>${version.google.inject}</version>
       </dependency>
       <dependency>
+         <groupId>com.google.inject.extensions</groupId>
+         <artifactId>guice-multibindings</artifactId>
+         <version>${version.google.inject}</version>
+      </dependency>
+      <dependency>
         <groupId>com.google.guava</groupId>
         <artifactId>guava</artifactId>
         <version>${version.google.guava}</version>
@@ -649,7 +725,12 @@
       <dependency>
          <groupId>rome</groupId>
          <artifactId>rome</artifactId>
-         <version>${version.rome}</version>
+         <version>${version.rome.rome}</version>
+      </dependency>
+      <dependency>
+        <groupId>rome</groupId>
+        <artifactId>modules</artifactId>
+        <version>${version.rome.modules}</version>
       </dependency>
       <dependency>
          <groupId>com.ibm.icu</groupId>
@@ -738,7 +819,7 @@
       </dependency>
       <dependency>
         <groupId>net.sf.ehcache</groupId>
-        <artifactId>ehcache</artifactId>
+        <artifactId>ehcache-core</artifactId>
         <version>${version.ehcache}</version>
       </dependency>
       <dependency>
@@ -768,13 +849,14 @@
       </dependency>
       <dependency>
         <groupId>de.odysseus.juel</groupId>
-        <artifactId>juel-api</artifactId>
-        <version>${version.juel}</version>
-      </dependency>
-      <dependency>
-        <groupId>de.odysseus.juel</groupId>
         <artifactId>juel-impl</artifactId>
         <version>${version.juel}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>de.odysseus.juel</groupId>
+            <artifactId>juel-api</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>picocontainer</groupId>
@@ -789,6 +871,11 @@
       <dependency>
         <groupId>xpp3</groupId>
         <artifactId>xpp3</artifactId>
+        <version>${version.xpp3}</version>
+      </dependency>
+      <dependency>
+        <groupId>xpp3</groupId>
+        <artifactId>xpp3_min</artifactId>
         <version>${version.xpp3}</version>
       </dependency>
       <dependency>
