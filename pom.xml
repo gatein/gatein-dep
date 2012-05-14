@@ -8,7 +8,7 @@
   
   <groupId>org.gatein</groupId>
   <artifactId>gatein-dep</artifactId>
-  <version>1.1.0-Beta02</version>
+  <version>1.1.0-Beta03</version>
   <packaging>pom</packaging>
 
   <parent>
@@ -18,9 +18,9 @@
   </parent>
   
   <scm>
-    <connection>scm:svn:http://anonsvn.jboss.org/repos/gatein/maven/dep/tags/1.1.0-Beta02</connection>
-    <developerConnection>scm:svn:https://svn.jboss.org/repos/gatein/maven/dep/tags/1.1.0-Beta02</developerConnection>
-    <url>http://fisheye.jboss.org/browse/gatein/maven/dep/tags/1.1.0-Beta02</url>
+    <connection>scm:svn:http://anonsvn.jboss.org/repos/gatein/maven/dep/tags/1.1.0-Beta03</connection>
+    <developerConnection>scm:svn:https://svn.jboss.org/repos/gatein/maven/dep/tags/1.1.0-Beta03</developerConnection>
+    <url>http://fisheye.jboss.org/browse/gatein/maven/dep/tags/1.1.0-Beta03</url>
   </scm>
   
   <properties>
@@ -56,6 +56,7 @@
     <version.google.inject>2.0</version.google.inject>
     <version.google.collections>1.0-rc2</version.google.collections>
     <version.google.guava>r09</version.google.guava>
+    <version.google.javascript>r706</version.google.javascript>
     <version.oauth>20080621</version.oauth>
     <version.caja.json>r1</version.caja.json>
     <version.caja.caja>r3375</version.caja.caja>
@@ -639,6 +640,11 @@
         <groupId>com.google.guava</groupId>
         <artifactId>guava</artifactId>
         <version>${version.google.guava}</version>
+      </dependency>
+      <dependency>
+         <groupId>com.google.javascript</groupId>
+         <artifactId>closure-compiler</artifactId>
+         <version>${version.google.javascript}</version>
       </dependency>
       <dependency>
          <groupId>rome</groupId>
