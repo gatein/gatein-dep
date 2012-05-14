@@ -8,25 +8,25 @@
   
   <groupId>org.gatein</groupId>
   <artifactId>gatein-dep</artifactId>
-  <version>1.0.0-Beta01</version>
+  <version>1.0.0-Beta02</version>
   <packaging>pom</packaging>
 
   <parent>
   	<artifactId>jboss-parent</artifactId>
   	<groupId>org.jboss</groupId>
-  	<version>5-beta-3</version>
+  	<version>5-beta-4</version>
   </parent>
   
   <scm>
-   	<connection>scm:svn:http://anonsvn.jboss.org/repos/gatein/tools/maven/dep/tags/1.0.0-Beta01</connection>
-   	<developerConnection>scm:svn:https://svn.jboss.org/repos/gatein/tools/maven/dep/tags/1.0.0-Beta01</developerConnection>
-   	<url>http://fisheye.jboss.org/browse/gatein/tools/maven/dep/tags/1.0.0-Beta01</url>
+   	<connection>scm:svn:http://anonsvn.jboss.org/repos/gatein/tools/maven/dep/tags/1.0.0-Beta02</connection>
+   	<developerConnection>scm:svn:https://svn.jboss.org/repos/gatein/tools/maven/dep/tags/1.0.0-Beta02</developerConnection>
+   	<url>http://fisheye.jboss.org/browse/gatein/tools/maven/dep/tags/1.0.0-Beta02</url>
   </scm>
   
   <properties>
     <!-- Dependencies versions -->
     <version.activation>1.1</version.activation>
-    <version.chromattic>1.0.0-beta4</version.chromattic>
+    <version.chromattic>1.0.0-beta5</version.chromattic>
     <version.log4j>1.2.14</version.log4j>
     <version.junit>3.8.2</version.junit>
     <version.javax.servlet>2.5</version.javax.servlet>
