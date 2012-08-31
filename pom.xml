@@ -115,7 +115,7 @@
     <version.apache.commons-digester>1.7</version.apache.commons-digester>
     <version.apache.commons-betwixt>0.8</version.apache.commons-betwixt>
 
-    <version.hibernate.ejb3>1.0.2.GA</version.hibernate.ejb3>
+    <version.hibernate.javax.persistence>1.0.1.Final</version.hibernate.javax.persistence>
     <version.hibernate.commonsannotations>4.0.1.Final</version.hibernate.commonsannotations>
     <version.hibernate.core>4.1.2.Final</version.hibernate.core>
 
@@ -470,9 +470,9 @@
       -->
 
       <dependency>
-        <groupId>org.hibernate</groupId>
-        <artifactId>ejb3-persistence</artifactId>
-        <version>${version.hibernate.ejb3}</version>
+        <groupId>org.hibernate.javax.persistence</groupId>
+        <artifactId>hibernate-jpa-2.0-api</artifactId>
+        <version>${version.hibernate.javax.persistence}</version>
       </dependency>
       <dependency>
         <groupId>org.hibernate.common</groupId>
