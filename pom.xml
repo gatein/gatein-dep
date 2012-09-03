@@ -115,12 +115,11 @@
     <version.apache.commons-digester>1.7</version.apache.commons-digester>
     <version.apache.commons-betwixt>0.8</version.apache.commons-betwixt>
 
-    <version.hibernate.ejb3>1.0.2.GA</version.hibernate.ejb3>
-    <version.hibernate.commonsannotations>3.1.0.GA</version.hibernate.commonsannotations>
-    <version.hibernate.core>3.3.2.GA</version.hibernate.core>
-    <version.hibernate.annotations>3.4.0.GA</version.hibernate.annotations>
+    <version.hibernate.javax.persistence>1.0.1.Final</version.hibernate.javax.persistence>
+    <version.hibernate.commonsannotations>4.0.1.Final</version.hibernate.commonsannotations>
+    <version.hibernate.core>4.1.6.Final</version.hibernate.core>
 
-    <version.jboss.logging>2.0.5.GA</version.jboss.logging>
+    <version.jboss.logging>3.1.2.GA</version.jboss.logging>
     <version.jboss.common>2.2.9.GA</version.jboss.common>
     <version.jboss.remoting>2.5.0.GA</version.jboss.remoting>
     <version.jboss.unit>1.2.3</version.jboss.unit>
@@ -471,12 +470,12 @@
       -->
 
       <dependency>
-        <groupId>org.hibernate</groupId>
-        <artifactId>ejb3-persistence</artifactId>
-        <version>${version.hibernate.ejb3}</version>
+        <groupId>org.hibernate.javax.persistence</groupId>
+        <artifactId>hibernate-jpa-2.0-api</artifactId>
+        <version>${version.hibernate.javax.persistence}</version>
       </dependency>
       <dependency>
-        <groupId>org.hibernate</groupId>
+        <groupId>org.hibernate.common</groupId>
         <artifactId>hibernate-commons-annotations</artifactId>
         <version>${version.hibernate.commonsannotations}</version>
       </dependency>
@@ -484,11 +483,6 @@
         <groupId>org.hibernate</groupId>
         <artifactId>hibernate-core</artifactId>
         <version>${version.hibernate.core}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.hibernate</groupId>
-        <artifactId>hibernate-annotations</artifactId>
-        <version>${version.hibernate.annotations}</version>
       </dependency>
 
       <!--
@@ -549,17 +543,7 @@
       </dependency>
       <dependency>
         <groupId>org.jboss.logging</groupId>
-        <artifactId>jboss-logging-spi</artifactId>
-        <version>${version.jboss.logging}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.jboss.logging</groupId>
-        <artifactId>jboss-logging-jdk</artifactId>
-        <version>${version.jboss.logging}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.jboss.logging</groupId>
-        <artifactId>jboss-logging-log4j</artifactId>
+        <artifactId>jboss-logging</artifactId>
         <version>${version.jboss.logging}</version>
       </dependency>
       <dependency>
