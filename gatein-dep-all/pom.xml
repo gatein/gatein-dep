@@ -2,26 +2,20 @@
 		 
   <modelVersion>4.0.0</modelVersion>
   
-  <name>GateIn - Dependencies Versions</name>
+  <name>GateIn - Dependencies Versions - All</name>
   <description>GateIn dependencies configuration</description>
   <url>www.jboss.org/gatein</url>
 
   <parent>
     <groupId>org.gatein</groupId>
-    <artifactId>gatein-parent</artifactId>
-    <version>1.2.0.Alpha01</version>
+    <artifactId>gatein-dep-parent</artifactId>
+    <version>1.2.0.Alpha01-SNAPSHOT</version>
   </parent>
 
   <groupId>org.gatein</groupId>
-  <artifactId>gatein-dep-parent</artifactId>
+  <artifactId>gatein-dep-all</artifactId>
   <version>1.2.0.Alpha01-SNAPSHOT</version>
   <packaging>pom</packaging>
-
-  <scm>
-    <connection>scm:git:git://github.com/gatein/gatein-dep.git</connection>
-    <developerConnection>scm:git:ssh://git@github.com/gatein/gatein-dep.git</developerConnection>
-    <url>https://github.com/gatein/gatein-dep</url>
-  </scm>
 
   <licenses>
     <license>
@@ -30,12 +24,26 @@
       <distribution>repo</distribution>
     </license>
   </licenses>
-
-  <modules>
-    <module>gatein-dep</module>
-    <module>gatein-jboss-dep</module>
-    <module>gatein-dep-all</module>
-  </modules>
+  
+ <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>org.gatein</groupId>
+        <artifactId>gatein-dep</artifactId>
+        <version>${project.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.gatein</groupId>
+        <artifactId>gatein-jboss-dep</artifactId>
+        <version>${project.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+  
 
 
  
