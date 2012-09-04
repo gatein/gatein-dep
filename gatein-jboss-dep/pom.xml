@@ -9,12 +9,12 @@
   <parent>
     <groupId>org.gatein</groupId>
     <artifactId>gatein-dep-parent</artifactId>
-    <version>1.2.0.Alpha02</version>
+    <version>1.2.0.Alpha03-SNAPSHOT</version>
   </parent>
 
   <groupId>org.gatein</groupId>
   <artifactId>gatein-jboss-dep</artifactId>
-  <version>1.2.0.Alpha02</version>
+  <version>1.2.0.Alpha03-SNAPSHOT</version>
   <packaging>pom</packaging>
 
 
