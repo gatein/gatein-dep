@@ -84,8 +84,8 @@
 
     <!--<version.cargo>1.0.1-alpha-1</version.cargo>-->
 
-    <!--<version.apache.tomcat>6.0.29</version.apache.tomcat>-->
-    <!--&lt;!&ndash;<version.apache.xerces>2.9.1</version.apache.xerces>&ndash;&gt;-->
+    <version.apache.tomcat>6.0.29</version.apache.tomcat>
+    <version.apache.xerces>2.9.1</version.apache.xerces>
     <!--<version.apache.ant>1.7.0</version.apache.ant>-->
     <!--<version.apache.lucene>2.9.4</version.apache.lucene>-->
     <!--<version.apache.poi>3.6</version.apache.poi>-->
@@ -117,12 +117,14 @@
     <!--<version.hibernate.annotations>3.4.0.GA</version.hibernate.annotations>-->
 
     <!--<version.jboss.logging>2.0.5.GA</version.jboss.logging>-->
-    <!--<version.jboss.common>2.2.9.GA</version.jboss.common>-->
-    <!--<version.jboss.remoting>2.5.0.GA</version.jboss.remoting>-->
-    <!--&lt;!&ndash;<version.jboss.unit>1.2.3</version.jboss.unit>&ndash;&gt;-->
-    <!--<version.jboss.serialization>1.0.3.GA</version.jboss.serialization>-->
-    <!--<version.jboss.reflect>2.0.2.GA</version.jboss.reflect>-->
-    <!--<version.jboss.microcontainer>2.0.10.GA</version.jboss.microcontainer>-->
+    <version.jboss.common>2.2.9.GA</version.jboss.common>
+
+    <!--should be 3.2.8.GA if possible-->
+    <version.jboss.remoting>2.5.0.GA</version.jboss.remoting>
+    <version.jboss.unit>1.2.3</version.jboss.unit>
+    <version.jboss.serialization>1.0.3.GA</version.jboss.serialization>
+    <version.jboss.reflect>2.0.2.GA</version.jboss.reflect>
+    <version.jboss.microcontainer>2.0.10.GA</version.jboss.microcontainer>
     <!--<version.jboss.j2ee>4.2.3.GA</version.jboss.j2ee>-->
     <!--<version.jboss.jmx>4.2.3.GA</version.jboss.jmx>-->
     <!--<version.jboss.man>2.0.0.GA</version.jboss.man>-->
@@ -353,16 +355,16 @@
         <!--<artifactId>xercesImpl</artifactId>-->
         <!--<version>${version.apache.xerces}</version>-->
       <!--</dependency>-->
-      <!--<dependency>-->
-        <!--<groupId>apache-xerces</groupId>-->
-        <!--<artifactId>xercesImpl</artifactId>-->
-        <!--<version>${version.apache.xerces}</version>-->
-      <!--</dependency>-->
-      <!--<dependency>-->
-        <!--<groupId>apache-xerces</groupId>-->
-        <!--<artifactId>xml-apis</artifactId>-->
-        <!--<version>${version.apache.xerces}</version>-->
-      <!--</dependency>-->
+      <dependency>
+        <groupId>apache-xerces</groupId>
+        <artifactId>xercesImpl</artifactId>
+        <version>${version.apache.xerces}</version>
+      </dependency>
+      <dependency>
+        <groupId>apache-xerces</groupId>
+        <artifactId>xml-apis</artifactId>
+        <version>${version.apache.xerces}</version>
+      </dependency>
 
       <!--<dependency>-->
         <!--<groupId>org.apache.poi</groupId>-->
@@ -406,11 +408,11 @@
         <!--<version>${version.pdfbox}</version>-->
       <!--</dependency>-->
 
-      <!--<dependency>-->
-        <!--<groupId>org.apache.tomcat</groupId>-->
-        <!--<artifactId>catalina</artifactId>-->
-        <!--<version>${version.apache.tomcat}</version>-->
-      <!--</dependency>-->
+      <dependency>
+        <groupId>org.apache.tomcat</groupId>
+        <artifactId>catalina</artifactId>
+        <version>${version.apache.tomcat}</version>
+      </dependency>
       <!--<dependency>-->
         <!--<groupId>org.apache.tomcat</groupId>-->
         <!--<artifactId>el-api</artifactId>-->
@@ -495,36 +497,36 @@
       ***********************
       -->
 
-      <!--<dependency>-->
-        <!--<groupId>org.jboss.unit</groupId>-->
-        <!--<artifactId>jboss-unit</artifactId>-->
-        <!--<version>${version.jboss.unit}</version>-->
-      <!--</dependency>-->
-      <!--<dependency>-->
-        <!--<groupId>org.jboss.unit</groupId>-->
-        <!--<artifactId>jboss-unit-remote</artifactId>-->
-        <!--<version>${version.jboss.unit}</version>-->
-      <!--</dependency>-->
-      <!--<dependency>-->
-        <!--<groupId>org.jboss.unit</groupId>-->
-        <!--<artifactId>jboss-unit-mc</artifactId>-->
-        <!--<version>${version.jboss.unit}</version>-->
-      <!--</dependency>-->
-      <!--<dependency>-->
-        <!--<groupId>org.jboss.unit</groupId>-->
-        <!--<artifactId>jboss-unit-tooling-ant</artifactId>-->
-        <!--<version>${version.jboss.unit}</version>-->
-      <!--</dependency>-->
-      <!--<dependency>-->
-        <!--<groupId>org.jboss.unit</groupId>-->
-        <!--<artifactId>portal-test</artifactId>-->
-        <!--<version>${version.jboss.unit}</version>-->
-      <!--</dependency>-->
-      <!--<dependency>-->
-        <!--<groupId>org.jboss.unit</groupId>-->
-        <!--<artifactId>portal-test-generic</artifactId>-->
-        <!--<version>${version.jboss.unit}</version>-->
-      <!--</dependency>-->
+      <dependency>
+        <groupId>org.jboss.unit</groupId>
+        <artifactId>jboss-unit</artifactId>
+        <version>${version.jboss.unit}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jboss.unit</groupId>
+        <artifactId>jboss-unit-remote</artifactId>
+        <version>${version.jboss.unit}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jboss.unit</groupId>
+        <artifactId>jboss-unit-mc</artifactId>
+        <version>${version.jboss.unit}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jboss.unit</groupId>
+        <artifactId>jboss-unit-tooling-ant</artifactId>
+        <version>${version.jboss.unit}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jboss.unit</groupId>
+        <artifactId>portal-test</artifactId>
+        <version>${version.jboss.unit}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jboss.unit</groupId>
+        <artifactId>portal-test-generic</artifactId>
+        <version>${version.jboss.unit}</version>
+      </dependency>
       <!--<dependency>-->
         <!--<groupId>jboss</groupId>-->
         <!--<artifactId>jboss-j2ee</artifactId>-->
@@ -560,36 +562,36 @@
         <!--<artifactId>jboss-logging-log4j</artifactId>-->
         <!--<version>${version.jboss.logging}</version>-->
       <!--</dependency>-->
-      <!--<dependency>-->
-        <!--<groupId>org.jboss</groupId>-->
-        <!--<artifactId>jboss-common-core</artifactId>-->
-        <!--<version>${version.jboss.common}</version>-->
-      <!--</dependency>-->
-      <!--<dependency>-->
-        <!--<groupId>org.jboss.remoting</groupId>-->
-        <!--<artifactId>jboss-remoting</artifactId>-->
-        <!--<version>${version.jboss.remoting}</version>-->
-      <!--</dependency>-->
-      <!--<dependency>-->
-        <!--<groupId>jboss</groupId>-->
-        <!--<artifactId>jboss-serialization</artifactId>-->
-        <!--<version>${version.jboss.serialization}</version>-->
-      <!--</dependency>-->
-      <!--<dependency>-->
-        <!--<groupId>org.jboss</groupId>-->
-        <!--<artifactId>jboss-reflect</artifactId>-->
-        <!--<version>${version.jboss.reflect}</version>-->
-       <!--</dependency>-->
-      <!--<dependency>-->
-        <!--<groupId>org.jboss.microcontainer</groupId>-->
-        <!--<artifactId>jboss-dependency</artifactId>-->
-        <!--<version>${version.jboss.microcontainer}</version>-->
-      <!--</dependency>-->
-      <!--<dependency>-->
-        <!--<groupId>org.jboss.microcontainer</groupId>-->
-        <!--<artifactId>jboss-kernel</artifactId>-->
-        <!--<version>${version.jboss.microcontainer}</version>-->
-      <!--</dependency>-->
+      <dependency>
+        <groupId>org.jboss</groupId>
+        <artifactId>jboss-common-core</artifactId>
+        <version>${version.jboss.common}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jboss.remoting</groupId>
+        <artifactId>jboss-remoting</artifactId>
+        <version>${version.jboss.remoting}</version>
+      </dependency>
+      <dependency>
+        <groupId>jboss</groupId>
+        <artifactId>jboss-serialization</artifactId>
+        <version>${version.jboss.serialization}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jboss</groupId>
+        <artifactId>jboss-reflect</artifactId>
+        <version>${version.jboss.reflect}</version>
+       </dependency>
+      <dependency>
+        <groupId>org.jboss.microcontainer</groupId>
+        <artifactId>jboss-dependency</artifactId>
+        <version>${version.jboss.microcontainer}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jboss.microcontainer</groupId>
+        <artifactId>jboss-kernel</artifactId>
+        <version>${version.jboss.microcontainer}</version>
+      </dependency>
       <!--<dependency>-->
         <!--<groupId>org.jboss</groupId>-->
         <!--<artifactId>jbossxb</artifactId>-->
