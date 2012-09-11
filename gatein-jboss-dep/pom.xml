@@ -21,6 +21,19 @@
   <!--Clenaup process in progress - keeping those commented out props for now to be able to reintroduce easily-->
   <properties>
 
+    <!--Dependencies comming from gatein-wci-->
+    <version.apache.tomcat>6.0.29</version.apache.tomcat>
+    <version.apache.xerces>2.9.1</version.apache.xerces>
+    <version.jboss.common>2.2.9.GA</version.jboss.common>
+    <!--should be 3.2.8.GA if possible-->
+    <version.jboss.remoting>2.5.0.GA</version.jboss.remoting>
+    <version.jboss.unit>1.2.3</version.jboss.unit>
+    <version.jboss.serialization>1.0.3.GA</version.jboss.serialization>
+    <version.jboss.reflect>2.0.2.GA</version.jboss.reflect>
+    <version.jboss.microcontainer>2.0.10.GA</version.jboss.microcontainer>
+
+    <!--Dependencies comming from gatein-pc-->
+
     <!--<version.javax.activation>1.1.1</version.javax.activation>-->
     <!--<version.javax.servlet>2.5</version.javax.servlet>-->
     <!--<version.javax.servlet.jsp>2.1</version.javax.servlet.jsp>-->
@@ -84,8 +97,7 @@
 
     <!--<version.cargo>1.0.1-alpha-1</version.cargo>-->
 
-    <version.apache.tomcat>6.0.29</version.apache.tomcat>
-    <version.apache.xerces>2.9.1</version.apache.xerces>
+
     <!--<version.apache.ant>1.7.0</version.apache.ant>-->
     <!--<version.apache.lucene>2.9.4</version.apache.lucene>-->
     <!--<version.apache.poi>3.6</version.apache.poi>-->
@@ -117,18 +129,11 @@
     <!--<version.hibernate.annotations>3.4.0.GA</version.hibernate.annotations>-->
 
     <!--<version.jboss.logging>2.0.5.GA</version.jboss.logging>-->
-    <version.jboss.common>2.2.9.GA</version.jboss.common>
 
-    <!--should be 3.2.8.GA if possible-->
-    <version.jboss.remoting>2.5.0.GA</version.jboss.remoting>
-    <version.jboss.unit>1.2.3</version.jboss.unit>
-    <version.jboss.serialization>1.0.3.GA</version.jboss.serialization>
-    <version.jboss.reflect>2.0.2.GA</version.jboss.reflect>
-    <version.jboss.microcontainer>2.0.10.GA</version.jboss.microcontainer>
     <!--<version.jboss.j2ee>4.2.3.GA</version.jboss.j2ee>-->
     <!--<version.jboss.jmx>4.2.3.GA</version.jboss.jmx>-->
     <!--<version.jboss.man>2.0.0.GA</version.jboss.man>-->
-    <version.jboss.vfs>2.1.4.GA</version.jboss.vfs>
+
     <!--<version.jboss.cache>3.2.6.GA</version.jboss.cache>-->
     <!--<version.jboss.javassist>3.14.0-GA</version.jboss.javassist>-->
     <!--<version.jboss.jgroups>2.11.1.Final</version.jboss.jgroups>-->

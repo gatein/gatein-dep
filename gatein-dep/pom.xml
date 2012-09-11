@@ -9,7 +9,7 @@
   <parent>
     <groupId>org.gatein</groupId>
     <artifactId>gatein-dep-parent</artifactId>
-    <version>1.2.0.Alpha03-SNAPSHOT</version>
+    <version>1.2.0.Alpha03</version>
   </parent>
 
   <groupId>org.gatein</groupId>
@@ -18,11 +18,31 @@
   <packaging>pom</packaging>
 
 
-  <!--Clenaup process in progress - keeping those commented out props for now to be able to reintroduce easily-->
+  <!--Clenaup process in progress - keeping commented out props for now to be able to reintroduce easily-->
   <properties>
 
-    <!--<version.javax.activation>1.1.1</version.javax.activation>-->
+    <!-- Dependencies from gatein-common -->
+    <version.org.slf4j>1.6.1</version.org.slf4j>
     <version.javax.servlet>2.5</version.javax.servlet>
+    <version.junit>3.8.2</version.junit>
+
+    <!-- Dependencies from gatein-wci -->
+    <version.concurrent>1.3.4</version.concurrent>
+    <version.log4j>1.2.16</version.log4j>
+    <version.jboss.as>7.1.2.Final</version.jboss.as>
+
+    <!-- Dependencies from gatein-pc-->
+
+
+    <!-- Dependencies from gatein-portal-->
+
+
+
+
+    <!-- Leftovers - should gone once cleanup process is compleated-->
+
+
+    <!--<version.javax.activation>1.1.1</version.javax.activation>-->
     <!--<version.javax.servlet.jsp>2.1</version.javax.servlet.jsp>-->
     <!--<version.javax.servlet.jstl>1.2</version.javax.servlet.jstl>-->
     <!--<version.javax.portlet>2.0</version.javax.portlet>-->
@@ -35,15 +55,13 @@
     <!--<version.javax.mail>1.4.4</version.javax.mail>-->
     <!--<version.javax.resource>1.5</version.javax.resource>-->
 
-    <version.org.slf4j>1.6.1</version.org.slf4j>
-    <version.log4j>1.2.16</version.log4j>
+
 
     <!--<version.xml-apis>1.3.04</version.xml-apis>-->
-    <version.junit>4.10</version.junit>
     <!--<version.hsqldb>2.0.0</version.hsqldb>-->
     <!--<version.rhino>1.7R2</version.rhino>-->
     <!--<version.groovy>1.7.6</version.groovy>-->
-    <version.concurrent>1.3.4</version.concurrent>
+
     <!--<version.sun.jaxb>2.1.4</version.sun.jaxb>-->
     <!--<version.orgjson>20070829</version.orgjson>-->
     <!--<version.nuhtmlparser>1.0.7</version.nuhtmlparser>-->
@@ -117,7 +135,7 @@
     <!--<version.hibernate.annotations>3.4.0.GA</version.hibernate.annotations>-->
 
 
-    <version.jboss.as>7.1.2.Final</version.jboss.as>
+
     <!--<version.jboss.logging>2.0.5.GA</version.jboss.logging>-->
     <!--<version.jboss.common>2.2.9.GA</version.jboss.common>-->
     <!--<version.jboss.remoting>2.5.0.GA</version.jboss.remoting>-->
