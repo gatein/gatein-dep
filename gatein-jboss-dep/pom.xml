@@ -31,6 +31,13 @@
     <version.jboss.serialization>1.0.3.GA</version.jboss.serialization>
     <version.jboss.reflect>2.0.2.GA</version.jboss.reflect>
     <version.jboss.microcontainer>2.0.10.GA</version.jboss.microcontainer>
+    <version.groovy>1.7.6</version.groovy>
+    <version.caja.caja>r4251</version.caja.caja>
+    <version.caja.json>r1</version.caja.json>
+    <version.hibernate.ejb3>1.0.2.GA</version.hibernate.ejb3>
+    <version.hibernate.commonsannotations>3.1.0.GA</version.hibernate.commonsannotations>
+    <version.hibernate.core>3.3.2.GA</version.hibernate.core>
+    <version.hibernate.annotations>3.4.0.GA</version.hibernate.annotations>
 
     <!--Dependencies comming from gatein-pc-->
 
@@ -55,7 +62,6 @@
     <!--<version.junit>3.8.2</version.junit>-->
     <!--<version.hsqldb>2.0.0</version.hsqldb>-->
     <!--<version.rhino>1.7R2</version.rhino>-->
-    <!--<version.groovy>1.7.6</version.groovy>-->
     <!--<version.concurrent>1.3.4</version.concurrent>-->
     <!--<version.sun.jaxb>2.1.4</version.sun.jaxb>-->
     <!--<version.orgjson>20070829</version.orgjson>-->
@@ -72,8 +78,7 @@
     <!--<version.oauth.core_auth>20100527</version.oauth.core_auth>-->
     <!--<version.oauth.core_oauth-provider>20100527</version.oauth.core_oauth-provider>-->
     <!--<version.oauth.core_oauth-httpclient4>20090913</version.oauth.core_oauth-httpclient4>-->
-    <!--<version.caja.caja>r4251</version.caja.caja>-->
-    <!--<version.caja.json>r1</version.caja.json>-->
+
     <!--<version.caja.htmlparser>r4209</version.caja.htmlparser>-->
     <!--<version.jibx>1.2.2</version.jibx>-->
     <!--<version.antlr>2.7.6rc1</version.antlr>-->
@@ -123,10 +128,7 @@
     <!--<version.apache.commons-digester>1.7</version.apache.commons-digester>-->
     <!--<version.apache.commons-betwixt>0.8</version.apache.commons-betwixt>-->
 
-    <!--<version.hibernate.ejb3>1.0.2.GA</version.hibernate.ejb3>-->
-    <!--<version.hibernate.commonsannotations>3.1.0.GA</version.hibernate.commonsannotations>-->
-    <!--<version.hibernate.core>3.3.2.GA</version.hibernate.core>-->
-    <!--<version.hibernate.annotations>3.4.0.GA</version.hibernate.annotations>-->
+
 
     <!--<version.jboss.logging>2.0.5.GA</version.jboss.logging>-->
 
@@ -475,26 +477,26 @@
       ***********************
       -->
 
-      <!--<dependency>-->
-        <!--<groupId>org.hibernate</groupId>-->
-        <!--<artifactId>ejb3-persistence</artifactId>-->
-        <!--<version>${version.hibernate.ejb3}</version>-->
-      <!--</dependency>-->
-      <!--<dependency>-->
-        <!--<groupId>org.hibernate</groupId>-->
-        <!--<artifactId>hibernate-commons-annotations</artifactId>-->
-        <!--<version>${version.hibernate.commonsannotations}</version>-->
-      <!--</dependency>-->
-      <!--<dependency>-->
-        <!--<groupId>org.hibernate</groupId>-->
-        <!--<artifactId>hibernate-core</artifactId>-->
-        <!--<version>${version.hibernate.core}</version>-->
-      <!--</dependency>-->
-      <!--<dependency>-->
-        <!--<groupId>org.hibernate</groupId>-->
-        <!--<artifactId>hibernate-annotations</artifactId>-->
-        <!--<version>${version.hibernate.annotations}</version>-->
-      <!--</dependency>-->
+      <dependency>
+        <groupId>org.hibernate</groupId>
+        <artifactId>ejb3-persistence</artifactId>
+        <version>${version.hibernate.ejb3}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.hibernate</groupId>
+        <artifactId>hibernate-commons-annotations</artifactId>
+        <version>${version.hibernate.commonsannotations}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.hibernate</groupId>
+        <artifactId>hibernate-core</artifactId>
+        <version>${version.hibernate.core}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.hibernate</groupId>
+        <artifactId>hibernate-annotations</artifactId>
+        <version>${version.hibernate.annotations}</version>
+      </dependency>
 
       <!--
       ***********************
@@ -659,28 +661,28 @@
         <!--<artifactId>js</artifactId>-->
         <!--<version>${version.rhino}</version>-->
       <!--</dependency>-->
-      <!--<dependency>-->
-        <!--<groupId>org.codehaus.groovy</groupId>-->
-        <!--<artifactId>groovy-all</artifactId>-->
-        <!--<version>${version.groovy}</version>-->
-      <!--</dependency>-->
-      <!--<dependency>-->
-        <!--<groupId>caja</groupId>-->
-        <!--<artifactId>caja</artifactId>-->
-        <!--<version>${version.caja.caja}</version>-->
-        <!--<exclusions>-->
-           <!--&lt;!&ndash; force use of xml-apis until caja fixes their pom &ndash;&gt;-->
-           <!--<exclusion>-->
-              <!--<groupId>xerces</groupId>-->
-              <!--<artifactId>xmlParserAPIs</artifactId>-->
-           <!--</exclusion>-->
-        <!--</exclusions>-->
-      <!--</dependency>-->
-      <!--<dependency>-->
-        <!--<groupId>caja</groupId>-->
-        <!--<artifactId>json_simple</artifactId>-->
-        <!--<version>${version.caja.json}</version>-->
-      <!--</dependency>      -->
+      <dependency>
+        <groupId>org.codehaus.groovy</groupId>
+        <artifactId>groovy-all</artifactId>
+        <version>${version.groovy}</version>
+      </dependency>
+      <dependency>
+        <groupId>caja</groupId>
+        <artifactId>caja</artifactId>
+        <version>${version.caja.caja}</version>
+        <exclusions>
+           <!-- force use of xml-apis until caja fixes their pom -->
+           <exclusion>
+              <groupId>xerces</groupId>
+              <artifactId>xmlParserAPIs</artifactId>
+           </exclusion>
+        </exclusions>
+      </dependency>
+      <dependency>
+        <groupId>caja</groupId>
+        <artifactId>json_simple</artifactId>
+        <version>${version.caja.json}</version>
+      </dependency>
       <!--<dependency>-->
         <!--<groupId>caja</groupId>-->
         <!--<artifactId>htmlparser</artifactId>-->
