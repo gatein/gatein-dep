@@ -14,7 +14,7 @@
 
   <groupId>org.gatein</groupId>
   <artifactId>gatein-dep</artifactId>
-  <version>1.2.0.Alpha05</version>
+  <version>1.2.0.Alpha06-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <scm>
