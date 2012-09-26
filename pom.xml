@@ -57,7 +57,7 @@
     <version.icu4j>3.8</version.icu4j>
     <version.rome.rome>1.0</version.rome.rome>
     <version.google.inject>2.0</version.google.inject>
-    <version.google.guava>r09</version.google.guava>
+    <version.google.guava>11.0.2</version.google.guava>
     <version.org.slf4j>1.6.1</version.org.slf4j>
     <version.oauth.core_auth>20100527</version.oauth.core_auth>
     <version.caja.caja>r4251</version.caja.caja>
@@ -65,16 +65,16 @@
     <version.jibx>1.2.2</version.jibx>
     <version.antlr>2.7.6rc1</version.antlr>
     <version.aopalliance>1.0</version.aopalliance>
-    <version.asm>1.5.3</version.asm>
+    <version.asm>3.3.1</version.asm>
     <version.bouncycastle>136</version.bouncycastle>
     <version.cglib>2.2</version.cglib>
     <version.dom4j>1.6.1</version.dom4j>
     <version.ehcache>2.2.0</version.ehcache>
     <version.jhlabs>2.0.235</version.jhlabs>
     <version.htmlparser>1.6</version.htmlparser>
-    <version.jdom>1.0</version.jdom>
+    <version.jdom>1.1.2</version.jdom>
     <version.junit>4.10</version.junit>
-    <version.jodatime>1.6</version.jodatime>
+    <version.jodatime>1.6.2</version.jodatime>
     <version.jsecurity>0.9.0</version.jsecurity>
     <version.juel>2.2.3</version.juel>
     <version.log4j>1.2.16</version.log4j>
@@ -96,8 +96,8 @@
     <version.apache.commons-chain>1.2</version.apache.commons-chain>
     <version.apache.commons-codec>1.4</version.apache.commons-codec>
     <version.apache.commons-fileupload>1.2.1</version.apache.commons-fileupload>
-    <version.apache.commons-pool>1.5.5</version.apache.commons-pool>
-    <version.apache.commons-io>1.4</version.apache.commons-io>
+    <version.apache.commons-pool>1.5.6</version.apache.commons-pool>
+    <version.apache.commons-io>2.1</version.apache.commons-io>
     <version.apache.commons-collections>3.2.1</version.apache.commons-collections>
     <version.apache.commons-lang>2.6</version.apache.commons-lang>
     <version.apache.commons-digester>1.7</version.apache.commons-digester>
@@ -119,7 +119,7 @@
 
     <!--Back from gatein-portal pom-->
     <!--TODO:sort-->
-    <version.hibernate.javax.persistence>1.0.1.Final</version.hibernate.javax.persistence>
+    <version.hibernate.jpa20.api>1.0.1.Final</version.hibernate.jpa20.api>
     <version.hibernate.commonsannotations>4.0.1.Final</version.hibernate.commonsannotations>
     <version.hibernate.core>4.1.6.Final</version.hibernate.core>
     <version.jboss.logging>3.1.2.GA</version.jboss.logging>
@@ -144,7 +144,7 @@
     <version.xdoclet>1.2.3</version.xdoclet>
     <version.xapool>1.5.0</version.xapool>
 
-    <version.slf4j>1.5.8</version.slf4j>
+    <version.slf4j>1.6.1</version.slf4j>
     <version.slf4j.logmanager>1.0.0.GA</version.slf4j.logmanager>
     <version.jaxb>2.1</version.jaxb>
     <version.jaxb.impl>2.1.7</version.jaxb.impl>
@@ -657,7 +657,7 @@
         <version>${version.htmlparser}</version>
       </dependency>
       <dependency>
-        <groupId>jdom</groupId>
+        <groupId>org.jdom</groupId>
         <artifactId>jdom</artifactId>
         <version>${version.jdom}</version>
       </dependency>
@@ -717,7 +717,7 @@
       <dependency>
         <groupId>org.hibernate.javax.persistence</groupId>
         <artifactId>hibernate-jpa-2.0-api</artifactId>
-        <version>${version.hibernate.javax.persistence}</version>
+        <version>${version.hibernate.jpa20.api}</version>
       </dependency>
       <dependency>
         <groupId>org.hibernate.common</groupId>
