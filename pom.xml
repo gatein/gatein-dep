@@ -56,7 +56,7 @@
     <version.nekohtml>1.9.14</version.nekohtml>
     <version.icu4j>3.8</version.icu4j>
     <version.rome.rome>1.0</version.rome.rome>
-    <version.google.inject>2.0</version.google.inject>
+    <version.google.inject>3.0</version.google.inject>
     <version.google.guava>11.0.2</version.google.guava>
     <version.org.slf4j>1.6.1</version.org.slf4j>
     <version.oauth.core_auth>20100527</version.oauth.core_auth>
