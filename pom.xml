@@ -31,7 +31,6 @@
     </license>
   </licenses>
 
-  <!--Clenaup process in progress - keeping those commented out props for now to be able to reintroduce easily-->
   <properties>
 
     <version.javax.activation>1.1.1</version.javax.activation>
@@ -103,7 +102,6 @@
     <version.apache.commons-digester>1.7</version.apache.commons-digester>
     <version.jboss.common>2.2.9.GA</version.jboss.common>
 
-    <!--should be 3.2.8.GA if possible-->
     <version.jboss.remoting>2.5.0.GA</version.jboss.remoting>
     <version.jboss.unit>1.2.3</version.jboss.unit>
     <version.jboss.serialization>1.0.3.GA</version.jboss.serialization>
@@ -117,8 +115,6 @@
     <version.jboss.jbossas2>5.1.0.GA</version.jboss.jbossas2>
     <version.jboss.jbossts>4.6.1.GA</version.jboss.jbossts>
 
-    <!--Back from gatein-portal pom-->
-    <!--TODO:sort-->
     <version.hibernate.jpa20.api>1.0.1.Final</version.hibernate.jpa20.api>
     <version.hibernate.commonsannotations>4.0.1.Final</version.hibernate.commonsannotations>
     <version.hibernate.core>4.1.6.Final</version.hibernate.core>
@@ -151,7 +147,6 @@
     <version.stax.api>1.0-2</version.stax.api>
     <version.sjsxp>1.0.1</version.sjsxp>
     <version.howl.logger>0.1.11</version.howl.logger>
-    <!--<version.ehcache>1.6.0</version.ehcache>-->
     <version.juniversalchardet>1.0.3</version.juniversalchardet>
     <version.plugin.jaxb>0.7.4</version.plugin.jaxb>
 
@@ -163,7 +158,6 @@
   <!-- ********************* -->
 
 
-  <!--Clenaup process in progress - keeping those commented out deps for now to be able to reintroduce easily-->
   <dependencyManagement>
     <dependencies>
 
