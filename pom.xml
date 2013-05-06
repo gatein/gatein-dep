@@ -159,8 +159,8 @@
     <version.picketlink.fed>2.1.4.Final</version.picketlink.fed>
     <version.twitter4j>2.2.6</version.twitter4j>
     <version.google.api.client>1.14.1-beta</version.google.api.client>
-    <version.google.apis.plus>v1-rev60-1.14.1-beta</version.google.apis.plus>
-    <version.google.apis.oauth>v2-rev29-1.13.2-beta</version.google.apis.oauth>
+    <version.google.apis.plus>v1-rev69-1.14.2-beta</version.google.apis.plus>
+    <version.google.apis.oauth>v2-rev36-1.14.2-beta</version.google.apis.oauth>
     <version.restfb>1.6.12</version.restfb>
     <version.jackson.core>1.9.2</version.jackson.core>
 
