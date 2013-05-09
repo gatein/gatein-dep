@@ -152,6 +152,7 @@
 
     <org.infinispan.version>5.2.6.Final</org.infinispan.version>
     <org.jboss.marshalling.version>1.3.16.GA</org.jboss.marshalling.version>
+    <org.jboss.staxmapper.version>1.1.0.Final</org.jboss.staxmapper.version>
     <version.org.apache.httpcomponents>4.2.1</version.org.apache.httpcomponents>
     <version.org.apache.httpcomponents.httpcore>4.2.1</version.org.apache.httpcomponents.httpcore>
 
@@ -1006,6 +1007,11 @@
         <groupId>org.jboss.marshalling</groupId>
         <artifactId>jboss-marshalling-river</artifactId>
         <version>${org.jboss.marshalling.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.jboss</groupId>
+        <artifactId>staxmapper</artifactId>
+        <version>${org.jboss.staxmapper.version}</version>
       </dependency>
 
       <!-- SSO 3rd party deps -->
