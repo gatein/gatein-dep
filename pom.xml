@@ -108,9 +108,10 @@
     <version.jboss.reflect>2.0.2.GA</version.jboss.reflect>
     <version.jboss.microcontainer>2.0.10.GA</version.jboss.microcontainer>
     <version.jboss.vfs>2.1.4.GA</version.jboss.vfs>
-    <version.jboss.cache>3.2.6.GA</version.jboss.cache>
+    <version.jboss.cache>3.2.7.GA</version.jboss.cache>
     <version.jboss.javassist>3.14.0-GA</version.jboss.javassist>
-    <version.jboss.jgroups>2.11.1.Final</version.jboss.jgroups>
+    <!-- JGroups version 2.6.22.Final should be used in 'product', but can't be used in 'project' as 2.6.22.Final build is JDK7 specific -->
+    <version.jboss.jgroups>2.6.21.Final</version.jboss.jgroups>
     <version.jboss.as>7.1.2.Final</version.jboss.as>
     <version.jboss.jbossas2>5.1.0.GA</version.jboss.jbossas2>
     <version.jboss.jbossts>4.6.1.GA</version.jboss.jbossts>
