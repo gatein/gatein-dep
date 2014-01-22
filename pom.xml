@@ -159,7 +159,7 @@
 
     <version.cas.client>3.2.1</version.cas.client>
     <version.picketlink.fed>2.1.6.Final</version.picketlink.fed>
-    <version.twitter4j>3.0.3</version.twitter4j>
+    <version.twitter4j>3.0.5</version.twitter4j>
     <version.google.api.client>1.14.1-beta</version.google.api.client>
     <version.google.apis.plus>v1-rev69-1.14.2-beta</version.google.apis.plus>
     <version.google.apis.oauth>v2-rev36-1.14.2-beta</version.google.apis.oauth>
