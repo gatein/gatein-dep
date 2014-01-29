@@ -611,7 +611,7 @@
         <version>${version.jibx}</version>
       </dependency>
       <dependency>
-        <groupId>antlr</groupId>
+        <groupId>org.antlr</groupId>
         <artifactId>antlr</artifactId>
         <version>${version.antlr}</version>
       </dependency>
