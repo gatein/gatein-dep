@@ -102,13 +102,6 @@
     <version.apache.commons-digester>2.1</version.apache.commons-digester>
     <version.jboss.common>2.2.9.GA</version.jboss.common>
 
-    <version.jboss.remoting>2.5.0.GA</version.jboss.remoting>
-    <version.jboss.unit>1.2.3</version.jboss.unit>
-    <version.jboss.serialization>1.0.3.GA</version.jboss.serialization>
-    <version.jboss.reflect>2.0.2.GA</version.jboss.reflect>
-    <version.jboss.microcontainer>2.0.10.GA</version.jboss.microcontainer>
-    <version.jboss.vfs>2.1.4.GA</version.jboss.vfs>
-    <version.jboss.cache>3.2.7.GA</version.jboss.cache>
     <version.jboss.javassist>3.18.0-GA</version.jboss.javassist>
     <version.jboss.jgroups>3.2.7.Final</version.jboss.jgroups>
     <version.jboss.as>7.1.2.Final</version.jboss.as>
@@ -422,74 +415,14 @@
       -->
 
       <dependency>
-        <groupId>org.jboss.unit</groupId>
-        <artifactId>jboss-unit</artifactId>
-        <version>${version.jboss.unit}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.jboss.unit</groupId>
-        <artifactId>jboss-unit-remote</artifactId>
-        <version>${version.jboss.unit}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.jboss.unit</groupId>
-        <artifactId>jboss-unit-mc</artifactId>
-        <version>${version.jboss.unit}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.jboss.unit</groupId>
-        <artifactId>jboss-unit-tooling-ant</artifactId>
-        <version>${version.jboss.unit}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.jboss.unit</groupId>
-        <artifactId>portal-test</artifactId>
-        <version>${version.jboss.unit}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.jboss.unit</groupId>
-        <artifactId>portal-test-generic</artifactId>
-        <version>${version.jboss.unit}</version>
-      </dependency>
-      <dependency>
         <groupId>org.jboss</groupId>
         <artifactId>jboss-common-core</artifactId>
         <version>${version.jboss.common}</version>
       </dependency>
       <dependency>
-        <groupId>org.jboss.remoting</groupId>
-        <artifactId>jboss-remoting</artifactId>
-        <version>${version.jboss.remoting}</version>
-      </dependency>
-      <dependency>
-        <groupId>jboss</groupId>
-        <artifactId>jboss-serialization</artifactId>
-        <version>${version.jboss.serialization}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.jboss</groupId>
-        <artifactId>jboss-reflect</artifactId>
-        <version>${version.jboss.reflect}</version>
-       </dependency>
-      <dependency>
-        <groupId>org.jboss.microcontainer</groupId>
-        <artifactId>jboss-dependency</artifactId>
-        <version>${version.jboss.microcontainer}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.jboss.microcontainer</groupId>
-        <artifactId>jboss-kernel</artifactId>
-        <version>${version.jboss.microcontainer}</version>
-      </dependency>
-      <dependency>
          <groupId>org.jboss.jbossas</groupId>
          <artifactId>jboss-as-tomcat</artifactId>
          <version>${version.jboss.jbossas2}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.jboss.cache</groupId>
-        <artifactId>jbosscache-core</artifactId>
-        <version>${version.jboss.cache}</version>
       </dependency>
       <dependency>
         <groupId>jboss.jbossts</groupId>
