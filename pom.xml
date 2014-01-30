@@ -676,6 +676,11 @@
       </dependency>
       <dependency>
         <groupId>org.htmlparser</groupId>
+        <artifactId>htmllexer</artifactId>
+        <version>${version.htmlparser}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.htmlparser</groupId>
         <artifactId>htmlparser</artifactId>
         <version>${version.htmlparser}</version>
       </dependency>
