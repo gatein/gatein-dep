@@ -62,7 +62,8 @@
     <version.caja.caja>r4251</version.caja.caja>
     <version.caja.json>r1</version.caja.json>
     <version.jibx>1.2.4.5</version.jibx>
-    <version.antlr>3.5</version.antlr>
+    <version.org.antlr>3.5</version.org.antlr>
+    <version.antlr>2.7.6rc1</version.antlr>
     <version.aopalliance>1.0</version.aopalliance>
     <version.asm>3.3.1</version.asm>
     <version.bouncycastle>136</version.bouncycastle>
@@ -622,6 +623,11 @@
       <dependency>
         <groupId>org.antlr</groupId>
         <artifactId>antlr</artifactId>
+        <version>${version.org.antlr}</version>
+      </dependency>
+      <dependency>
+        <groupId>antlr</groupId>
+        <artifactId>antlr</artifactId>
         <version>${version.antlr}</version>
       </dependency>
       <dependency>
@@ -1010,6 +1016,11 @@
       <dependency>
         <groupId>org.infinispan</groupId>
         <artifactId>infinispan-tree</artifactId>
+        <version>${org.infinispan.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.infinispan</groupId>
+        <artifactId>infinispan-cachestore-jdbc</artifactId>
         <version>${org.infinispan.version}</version>
       </dependency>
       <dependency>
